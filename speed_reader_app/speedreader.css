@@ -1,0 +1,102 @@
+/*	
+	Quinton Arnaud
+	CSC 337
+	Homework 4
+	CSS page for speedreader.html
+*/
+body {
+	background-color: #EAF6f6;
+	font-family: Garamond;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+h1 {
+	text-align: center;
+}
+
+button {
+	width: 70px;
+	background-color: white;
+	border: 1px solid;
+	border-color: gray;
+	font-family: Garamond;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+button:disabled {
+	background-color: lightgray;
+}
+
+#display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid;
+	border-color: #8EBEBE;
+	border-radius: 5px;
+	width: 80%;
+	height: 100px;
+	margin: auto;
+	background-color: #FFFFFF;
+}
+
+#displayText {
+	font-size: 36pt;
+	font-weight: bold;
+	line-height: 100px;
+}
+
+#controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 600px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#play {
+	width: auto;
+	margin: auto;
+}
+
+#speed {
+	width: auto;
+	margin: auto;
+}
+
+#size {
+	width: auto;
+	margin: auto;
+}
+
+#txtarea {
+	background-color: #FFFFFF;
+	border: 1px solid;
+	border-color: gray;
+}
+
+#center {
+	display: flex;
+	justify-content: center;
+}
+
+.line {
+	width: 100%;
+	border-bottom: 1px solid;
+	border-color: #8EBEBE; 
+	padding: 2px;
+	margin-bottom: 5px;
+}
+
+#tags {
+	position: fixed;
+	display: flex;
+	left: 5px;
+    bottom: 5px;
+    margin: 0;
+    padding: 0;
+}

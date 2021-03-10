@@ -1,0 +1,67 @@
+<!--
+	Quinton Arnaud
+	CSC 337
+	Homework 4
+
+	Creates the skeleton for the speed reader and adds divs and values to 
+	buttons, textboxes, and to be refrenced by both the css and js file
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="speedreader.css">
+	<script type="text/javascript" src="speedreader.js"></script>
+</head>
+<body>
+
+	<h1> SpeedReader </h1>
+
+	<div id = display>
+		<div id = displayText></div>
+	</div>
+
+	<div id = controls>
+		
+		<div id = play>
+			<div class = line>Play Controls:</div>
+			<button id = "start">Start</button>
+			<button id = "stop">Stop</button>
+		</div>
+
+		<div id = speed>
+			<div class = line>Speed:</div>
+			<select id = "wpm">
+				<option value = "500">50 wpm</option>
+				<option value = "200">300 wpm</option>
+				<option value = "171" selected="selected">350 wpm</option>
+				<option value = "150">400 wpm</option>
+				<option value = "133">450 wpm</option>
+				<option value = "120">500 wpm</option>
+			</select>
+		</div>
+
+		<div id = size>
+			<div class = line>Size:</div>
+			<label><input type="radio" id="medSize" name="sz" value="med" checked="checked" /> Medium </label>
+			<label><input type="radio" id="bigSize" name="sz" value="big" /> Big </label>
+			<label><input type="radio" id="biggerSize" name="sz" value="bigger" /> Bigger </label> 
+		</div>
+
+	</div>
+
+	<div id = center>
+	<div id = input>
+		<div class = line>Input Text</div>
+		<textarea id = "txtarea" rows = "10" cols = "80"></textarea>
+	</div>
+	</div>
+
+	<div id = "tags">
+			<a href="https://validator.w3.org/check/referer"><img src="http://allisonobourn.com/images/w3c-html-blue.png" alt="Valid HTML5"></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="http://allisonobourn.com/images/w3c-css-blue.png" alt="Valid CSS"></a>
+			<a href="https://webster.cs.washington.edu/jslint/?referer"><img src="http://allisonobourn.com/images/w3c-js-blue.png" alt="Valid JS"></a>
+		</div>
+
+</body>
+</html>
