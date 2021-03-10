@@ -1,0 +1,40 @@
+/*	
+	Quinton Arnaud
+	CSC 337
+	Homework 5
+	CSS page for fifteen.html/fifteen.js
+*/
+body {
+	font-family: cursive;
+	font-size: 14pt;
+	text-align: center;
+}
+
+#puzzlearea { /* creates 4x4 grid of 100 pixels each with template area strings relating to each portion */
+	display: grid;
+	grid-template-columns: 100px 100px 100px 100px;
+	grid-template-rows: 100px 100px 100px 100px;
+	grid-template-areas:
+	"one two three four"
+	"five six seven eight"
+	"nine ten eleven twelve"
+	"thirteen fourteen fifteen sixteen";
+	margin: auto;
+	width: 400px;
+	height: 400px;
+}
+
+.square { /* each square div added by JS */
+	font-size: 40pt;
+	text-align: center;
+	border: black 5px solid;
+	width: 90px;
+	height: 90px;
+	place-self: center;
+}
+
+.square:hover { /* properties when square is being hovered */
+	border: red 5px solid;
+	color: red;
+	cursor: pointer;
+}
