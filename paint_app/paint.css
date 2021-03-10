@@ -1,0 +1,53 @@
+/*	
+	Quinton Arnaud
+	CSC 337
+	Homework 9
+	CSS Page for paint adding relevant styles
+*/
+
+body {
+	background-color: #222222;
+	font-family: Helvetica;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+canvas {
+	background-color: white;
+	float: right;
+}
+
+#pen, #circles, #squares, #lines, #clear {
+	margin: 5px;
+	width: 80px;
+}
+
+#plussize, #minussize {
+	margin-left: 0px;
+	margin-right: 0px;
+	border: 1px solid grey;
+	width: 24px;
+}
+
+#contentarea {
+	display: flex;
+	justify-content: center;
+}
+
+#controls {
+	float: right;
+	width: 100px;
+	margin: 15px;
+}
+
+#colors {
+	height: 100px;
+}
+
+#pensize {
+	height: 100px;
+}

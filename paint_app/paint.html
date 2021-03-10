@@ -1,0 +1,46 @@
+<!--
+	Quinton Arnaud
+	CSC 337
+	Homework 9
+
+	Creates the skeleton for paint adding relevant canvases, buttons, and text
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSC 337 Paint</title>
+	<link href="paint.css" type="text/css" rel="stylesheet" />
+	<script src="paint.js" type="text/javascript"></script>
+</head>
+<body>
+	
+	<h1>CSC 337 Paint</h1>
+
+	<div id="contentarea">
+
+		<canvas id = "main" width="700px" height="500px"></canvas>
+
+		<div id = "controls">
+			<div id = "colors">
+				<canvas id="gradient" width="100px" height="100px"></canvas>
+			</div>
+
+			<div id = "pensize">
+				<p>pen size:</p>
+				<button id="plussize">+</button><!--
+				--><button id="minussize">-</button>
+
+				<canvas id="mini" width="50px" height="50px"></canvas>
+			</div>
+
+			<div id = "mode">
+				<button id="pen">pen</button><br/>
+				<button id="circles">circles</button><br/>
+				<button id="squares">squares</button><br/>
+				<button id="lines">lines</button><br/>
+				<button id="clear">clear</button><br/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
